@@ -1,9 +1,16 @@
 require "test_helper"
 
-describe Assignment do
-  let(:assignment) { Assignment.new }
+class AssignmentTest < ActiveSupport::TestCase
+  # Matchers
 
-  it "must be valid" do
-    value(assignment).must_be :valid?
+
+
+  # Context
+  context "Given context" do
+    setup do 
+
+    end
+
+
   end
 end
