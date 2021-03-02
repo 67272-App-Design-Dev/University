@@ -1,5 +1,5 @@
 module Contexts
-  module Deparments
+  module Departments
 
     def create_departments
       @is = FactoryBot.create(:department)

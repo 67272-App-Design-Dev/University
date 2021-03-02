@@ -1,9 +1,9 @@
 FactoryBot.define do
   factory :faculty do
-    first_name { "MyString" }
-    last_name { "MyString" }
-    department { nil }
-    rank { "MyString" }
-    active { false }
+    first_name { "Jeria" }
+    last_name { "Quesenberry" }
+    association :department
+    rank { "Professor" }
+    active { true }
   end
 end

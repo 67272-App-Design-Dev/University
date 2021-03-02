@@ -1,9 +1,16 @@
 require "test_helper"
 
-describe Faculty do
-  let(:faculty) { Faculty.new }
+class FacultyTest < ActiveSupport::TestCase
+  # Matchers
 
-  it "must be valid" do
-    value(faculty).must_be :valid?
+
+
+  # Context
+  context "Given context" do
+    setup do 
+
+    end
+
+
   end
 end
