@@ -8,8 +8,10 @@ class FacultyTest < ActiveSupport::TestCase
   # Context
   context "Given context" do
     setup do 
-
+      # build the testing context here...
     end
+
+    # with that testing context, write your tests...
 
 
   end

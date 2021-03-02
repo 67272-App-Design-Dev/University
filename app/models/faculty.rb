@@ -5,12 +5,12 @@ class Faculty < ApplicationRecord
   has_many :courses, through: :assignments
 
   # Scopes
-  # `alphabetical`
-  # `active`
+  # 1. `alphabetical` [order]
+  # 2. `active`       [where]
 
   # Validations
-  # must have first, last names
-  # rank must be either `Assistant Professor`, `Associate Professor`, or `Professor`
+  # 1. must have first, last names
+  # 2. rank must be either `Assistant Professor`, `Associate Professor`, or `Professor`
 
 
 end
