@@ -22,7 +22,7 @@ Having cloned this repo to your laptop (recommended) or gotten the zip file from
 	- notice that there is no affliated department yet
 7. Recreate the `@profq` object with a connection to the IS deparment with: 
 	- `@profq = FactoryBot.build(:faculty, department: @is)`
-	- note that we did NOT do `department_id` and a number (which could be anything) but connected the `@profq` object with department object and let the system figure out the rest 
+	- note that we did NOT do `department_id` and a number (which could be anything) but connected the `@profq` object with a department object (in this case, `@is` which was created in our departments context) and let the system figure out the rest 
 	- notice that there is no object ID yet; `build` only builds in memory and does not save to the database (`FactoryBot.create` will build in memory _and_ save to the database)
 8. Since it's not saved yet, go ahead and save this record to the database with `@profq.save` and run `Faculty.all` to see results are there in the database
 9. Open the `test/sets/faculties.rb` file and add step 7a code to the `create_faculties` method
@@ -34,7 +34,7 @@ Having cloned this repo to your laptop (recommended) or gotten the zip file from
 12. Include the Faculties submodule by uncommenting the appropriate line in `test/contexts.rb`
 13. Add the `create_faculties` method to `create_all` by uncommenting the appropriate lines
 14. Quit rails console
-15. Load the testing data into a clean copy of your dev database with the command `rake db:contexts`. (Note that this is not built into Rails; it was written for you and also exists in your project starter code.) Once that's done, re-open rails console and run `Department.all` and `Faculty.all` and see that the testing context is loaded in the dev environment.  If you want a challenge, repeat a similar exercise for `Course` (optional)
+15. Load the testing data into a clean copy of your dev database with the command `rake db:contexts`. (Note that this is not built into Rails; it was written for you and also exists in your project starter code.) Once that's done, re-open rails console and run `Department.all` and `Faculty.all` and see that the testing context data is loaded in the dev environment.  If you want a challenge, repeat a similar exercise for `Course` (optional)
 
 In class, we hope to get through step 8, but in any case **please complete all steps prior to class on Thursday** so we can do another exercise then.
 
