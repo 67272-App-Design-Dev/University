@@ -7,9 +7,11 @@ Some items and helper files have been added in advance to speed up time in-class
 
 To run the testing context in your dev environment, Prof. H already wrote a simple script that can be invoked at the command line terminal with `rake db:contexts`.  If you wanted to do this inside rails console (and assuming you dropped and remigrated the database), you could do this with the following:
 
-`require './test/contexts'`
+```bash
+require './test/contexts'
     
-`include Contexts`
+include Contexts
+```
 
 Then run the particular `create_` methods you've created in your context (e.g., `create_departments`).  Of course, this assumes your `test/contexts.rb` file is up to date...
 
