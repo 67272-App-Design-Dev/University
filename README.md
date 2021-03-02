@@ -26,8 +26,10 @@ Having cloned this repo to your laptop (recommended) or gotten the zip file from
 	- notice that there is no object ID yet; `build` only builds in memory and does not save to the database (`FactoryBot.create` will build in memory _and_ save to the database)
 8. Since it's not saved yet, go ahead and save this record to the database with `@profq.save` and run `Faculty.all` to see results are there in the database
 9. Open the `test/sets/faculties.rb` file and add step 7a code to the `create_faculties` method
-10. Create two more faculty from two other departments 
-	- (not `@soc`) and make one inactive
+10. Create two more faculty" 
+	- from two other departments, but not `@soc`
+	- make one inactive
+	- make sure they are not all called "Jeria Quesenberry" ;-)
 11. Require the faculties code by uncommenting the appropriate line in `test/contexts.rb`
 12. Include the Faculties submodule by uncommenting the appropriate line in `test/contexts.rb`
 13. Add the `create_faculties` method to `create_all` by uncommenting the appropriate lines
