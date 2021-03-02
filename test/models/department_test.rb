@@ -27,6 +27,7 @@ class DepartmentTest < ActiveSupport::TestCase
 
     should "show that all factories are properly created" do
       assert_equal "Information Systems", @is.name
+      assert_equal "Computer Science", @cs.name
       assert_equal "76", @english.unit_prefix
       assert @business.active
       deny @soc.active

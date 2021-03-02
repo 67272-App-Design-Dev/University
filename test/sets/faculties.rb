@@ -3,6 +3,7 @@ module Contexts
 
     def create_faculties
 
+      
     end
     
     def destroy_faculties

@@ -1,12 +1,12 @@
-# require needed files (generic term 'objects' used as placeholder)
-# require './test/sets/objects'
+# require needed files that have the modules
 require './test/sets/departments'
-
+# require './test/sets/faculties'
 
 
 module Contexts
   # explicitly include all sets of contexts used for testing 
   include Contexts::Departments
+  # include Contexts::Faculties
 
   
   def create_all
