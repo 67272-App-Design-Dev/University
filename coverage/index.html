@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-01T22:39:52-05:00">2021-03-01T22:39:52-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-03-04T10:04:17-05:00">2021-03-04T10:04:17-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,8 +29,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="green">
+         1.14
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>18</b> relevant lines,
-    <span class="green"><b>18</b> lines covered</span> and
+    <b>22</b> relevant lines,
+    <span class="green"><b>22</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -117,11 +117,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#9e87ddafecf4941a844f877062bd41e9cd48c687" class="src_link" title="app/models/faculty.rb">app/models/faculty.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.38</td>
             
           </tr>
         
@@ -259,8 +259,8 @@
      </span>
      covered at
      <span class="covered_strength">
-       <span class="yellow">
-         1.0
+       <span class="green">
+         1.14
        </span>
     </span> hits/line
     )
@@ -273,8 +273,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>18</b> relevant lines,
-    <span class="green"><b>18</b> lines covered</span> and
+    <b>22</b> relevant lines,
+    <span class="green"><b>22</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -347,11 +347,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#9e87ddafecf4941a844f877062bd41e9cd48c687" class="src_link" title="app/models/faculty.rb">app/models/faculty.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.38</td>
             
           </tr>
         
@@ -1005,8 +1005,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1106,13 +1106,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">  # `active`</code>
+            
+
+            <code class="ruby">  scope :alphabetical, -&gt; { order(&#39;last_name, first_name&#39;) }</code>
           </li>
         </div>
       
@@ -1123,7 +1123,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">   </code>
           </li>
         </div>
       
@@ -1134,18 +1134,18 @@
 
             
 
-            <code class="ruby">  # Validations</code>
+            <code class="ruby">  # `active`</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="12">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">  # must have first, last names</code>
+            
+
+            <code class="ruby">  scope :active, -&gt; { where(active: true) }</code>
           </li>
         </div>
       
@@ -1156,7 +1156,7 @@
 
             
 
-            <code class="ruby">  # rank must be either `Assistant Professor`, `Associate Professor`, or `Professor`</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -1167,7 +1167,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">  # Validations</code>
           </li>
         </div>
       
@@ -1178,12 +1178,78 @@
 
             
 
+            <code class="ruby">  # must have first, last names</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates_presence_of :first_name, :last_name</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  # rank must be either `Assistant Professor`, `Associate Professor`, or `Professor`</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates_inclusion_of :rank, in: [&quot;Assistant Professor&quot;, &quot;Associate Professor&quot;, &quot;Professor&quot;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
             
             
 
