@@ -13,21 +13,11 @@ class FacultyTest < ActiveSupport::TestCase
   # Context
   context "Given context" do
     setup do 
-      create_departments
-      create_faculties
+
+      
     end
 
-    # test the scope 'alphabetical'
-    should "shows that there are three faculty in in alphabetical order" do
-      assert_equal ["David", "David", "Jeria"], Faculty.alphabetical.map{|f| f.first_name}
-    end
-    
-    # test the scope 'active'
-    should "shows that there are two active faculty" do
-      assert_equal 2, Faculty.active.size
-      # assert_equal ["David", "Jeria"], Faculty.active.map{|f| f.first_name}.sort
-      assert_equal [@koz, @profq], Faculty.active.sort_by{|f| f.last_name}
-    end
+
 
 
   end
