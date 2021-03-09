@@ -10,11 +10,10 @@
           1,
           null,
           null,
-          null,
           2,
-          null,
-          null,
           3,
+          1,
+          1,
           null,
           null,
           null,
@@ -34,28 +33,15 @@
           null
         ]
       },
-      "/Users/profh/67-272-S21/University/app/models/department.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/profh/67-272-S21/University/app/models/assignment.rb": {
         "lines": [
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -64,10 +50,45 @@
           1,
           1,
           1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/profh/67-272-S21/University/app/models/department.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1614870257
+    "timestamp": 1615250507
   }
 }

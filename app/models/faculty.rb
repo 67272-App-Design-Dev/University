@@ -5,11 +5,10 @@ class Faculty < ApplicationRecord
   has_many :courses, through: :assignments
 
   # Scopes
-  # `alphabetical`
   scope :alphabetical, -> { order('last_name, first_name') }
-   
-  # `active`
   scope :active, -> { where(active: true) }
+  scope :inactive, -> { where.not(active: true) }
+  scope :for_department, ->(department_id) { where('department_id = ?', department_id) }
 
   # Validations
   # must have first, last names

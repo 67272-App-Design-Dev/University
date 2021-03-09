@@ -24,8 +24,10 @@ class FacultyTest < ActiveSupport::TestCase
     
     # test the scope 'active'
     should "shows that there are two active faculty" do
-      assert_equal 2, Faculty.active.size
+      assert_equal 2, Faculty.active.size  # necessary, but not sufficient
+
       # assert_equal ["David", "Jeria"], Faculty.active.map{|f| f.first_name}.sort
+      ### another way to do this would be...
       assert_equal [@koz, @profq], Faculty.active.sort_by{|f| f.last_name}
     end
 
