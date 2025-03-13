@@ -1,137 +1,75 @@
 {
-	"data": [
-		{
-			"id": "3",
-			"type": "department",
-			"attributes": {
-				"name": "Business",
-				"faculty": [
-
-				],
-				"number_of_courses": 0
-			}
-		},
-		{
-			"id": "2",
-			"type": "department",
-			"attributes": {
-				"name": "Computer Science",
-				"faculty": [
-					{
-						"data": {
-							"id": "2",
-							"type": "faculty",
-							"attributes": {
-								"name": "Kosbie, David",
-								"rank": "Professor",
-								"courses": [
-									{
-										"data": {
-											"id": "3",
-											"type": "course",
-											"attributes": {
-												"course_number": "15-112",
-												"name": "Intro to Python",
-												"units": 10
-											}
-										}
-									}
-								]
-							}
-						}
-					}
-				],
-				"number_of_courses": 1
-			}
-		},
-		{
-			"id": "4",
-			"type": "department",
-			"attributes": {
-				"name": "English",
-				"faculty": [
-
-				],
-				"number_of_courses": 0
-			}
-		},
-		{
-			"id": "1",
-			"type": "department",
-			"attributes": {
-				"name": "Information Systems",
-				"faculty": [
-					{
-						"data": {
-							"id": "4",
-							"type": "faculty",
-							"attributes": {
-								"name": "Heimann, Larry",
-								"rank": "Professor",
-								"courses": [
-									{
-										"data": {
-											"id": "2",
-											"type": "course",
-											"attributes": {
-												"course_number": "67-272",
-												"name": "App Design & Dev",
-												"units": 12
-											}
-										}
-									},
-									{
-										"data": {
-											"id": "4",
-											"type": "course",
-											"attributes": {
-												"course_number": "67-373",
-												"name": "IS Consulting",
-												"units": 12
-											}
-										}
-									}
-								]
-							}
-						}
-					},
-					{
-						"data": {
-							"id": "1",
-							"type": "faculty",
-							"attributes": {
-								"name": "Quesenberry, Jeria",
-								"rank": "Professor",
-								"courses": [
-									{
-										"data": {
-											"id": "4",
-											"type": "course",
-											"attributes": {
-												"course_number": "67-373",
-												"name": "IS Consulting",
-												"units": 12
-											}
-										}
-									},
-									{
-										"data": {
-											"id": "1",
-											"type": "course",
-											"attributes": {
-												"course_number": "67-250",
-												"name": "IS Mileux",
-												"units": 9
-											}
-										}
-									}
-								]
-							}
-						}
-					}
-				],
-				"number_of_courses": 3
-			}
+	"data": [{
+		"id": "3",
+		"type": "department",
+		"attributes": {
+			"id": 3,
+			"name": "Business",
+			"faculty": []
 		}
-	]
+	}, {
+		"id": "2",
+		"type": "department",
+		"attributes": {
+			"id": 2,
+			"name": "Computer Science",
+			"faculty": [{
+				"data": {
+					"id": "2",
+					"type": "faculty",
+					"attributes": {
+						"name": "Kosbie, David",
+						"rank": "Professor",
+						"numer_of_courses": 1
+					}
+				}
+			}]
+		}
+	}, {
+		"id": "4",
+		"type": "department",
+		"attributes": {
+			"id": 4,
+			"name": "English",
+			"faculty": [{
+				"data": {
+					"id": "3",
+					"type": "faculty",
+					"attributes": {
+						"name": "Kaufer, David",
+						"rank": "Professor",
+						"numer_of_courses": 0
+					}
+				}
+			}]
+		}
+	}, {
+		"id": "1",
+		"type": "department",
+		"attributes": {
+			"id": 1,
+			"name": "Information Systems",
+			"faculty": [{
+				"data": {
+					"id": "4",
+					"type": "faculty",
+					"attributes": {
+						"name": "Heimann, Larry",
+						"rank": "Professor",
+						"numer_of_courses": 2
+					}
+				}
+			}, {
+				"data": {
+					"id": "1",
+					"type": "faculty",
+					"attributes": {
+						"name": "Quesenberry, Jeria",
+						"rank": "Professor",
+						"numer_of_courses": 2
+					}
+				}
+			}]
+		}
+	}]
 }
