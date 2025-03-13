@@ -3,7 +3,7 @@ module Api::V1
 
     def index
 
-
+       # render json: DepartmentSerializer.new(@departments).serialized_json
     end   
   end
 end
