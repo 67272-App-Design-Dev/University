@@ -1,24 +1,19 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.4'
+ruby '3.4.7'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '7.0.4'
+gem 'rails', '8.1.1'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem 'sqlite3', '~> 2.0'
 
 # Use the Puma web server [https://github.com/puma/puma]
-gem 'puma', '~> 5.0'
-
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 6.0.0'
-# gem 'sassc-rails'
-gem 'uglifier', '4.1.2'
+gem 'puma', '~> 6.0'
 
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
@@ -33,7 +28,7 @@ gem 'stimulus-rails'
 gem 'jbuilder'
 
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 4.0'
+gem 'redis', '~> 5.0'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem 'bcrypt', '~> 3.1.7'
@@ -46,7 +41,7 @@ gem 'bootsnap', require: false
 
 
 # Other gems
-gem 'validates_timeliness', '~> 7.0.0.beta1'
+gem 'validates_timeliness', github: 'adzap/validates_timeliness'
 gem 'time_date_helpers', '0.0.4'
 gem 'cancancan'
 gem 'will_paginate'
@@ -59,18 +54,18 @@ group :development, :test do
   gem 'hirb'
 
   gem 'rails-controller-testing'
-  gem 'factory_bot_rails', '6.2.0'
-  gem 'shoulda-context', '2.0.0'
-  gem 'shoulda-matchers', '5.0.0'
-  gem 'minitest', '5.16.3'
-  gem 'minitest-rails', '7.0.0'
-  gem 'minitest-reporters', '1.5.0'
-  gem 'simplecov', '0.22.0'
+  gem 'factory_bot_rails'
+  gem 'shoulda-context'
+  gem 'shoulda-matchers'
+  gem 'minitest'
+  gem 'minitest-rails'
+  gem 'minitest-reporters'
+  gem 'simplecov'
 
-  gem 'cucumber', '5.3.0'
-  gem 'cucumber-rails', '2.6.1', require: false
-  gem 'database_cleaner', '2.0.1'
-  gem 'launchy', '2.5.0'
+  gem 'cucumber'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  gem 'launchy'
 end
 
 group :development do
@@ -86,5 +81,4 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'webdrivers'
 end
