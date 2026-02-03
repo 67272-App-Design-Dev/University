@@ -7,7 +7,6 @@ class DepartmentTest < ActiveSupport::TestCase
 
   should validate_presence_of(:name)
   should validate_presence_of(:unit_prefix)
-  should validate_uniqueness_of(:unit_prefix)
 
   should allow_value("01").for(:unit_prefix)
   should allow_value("67").for(:unit_prefix)

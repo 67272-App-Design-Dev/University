@@ -1,4 +1,4 @@
-module Contexts
+ module Contexts
   module Departments
 
     def create_departments
