@@ -15,7 +15,7 @@ class Department < ApplicationRecord
   ### but given the possibility of leading zeros, best is...
   validates_format_of :unit_prefix, with: /\A\d{2}\z/, message: "should be two digits"
 
-  validates_uniqueness_of :unit_prefix
+  # validates_uniqueness_of :unit_prefix
   ### we could also combine both validators as follows...
   # validates :unit_prefix, presence: true, format: with: /\A\d{2}\z/, unqiueness: true
 end
